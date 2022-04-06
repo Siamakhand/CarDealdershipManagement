@@ -87,7 +87,6 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h1>hello form yield content</h1>
               @yield('content')
             </div>
             <!-- / Content -->

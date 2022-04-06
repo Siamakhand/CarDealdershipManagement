@@ -13,8 +13,9 @@ class CarController extends Controller
 
 
     public function view() {
+        $car = Car::all();
 
-        return view('backend.pages.allcars');
+        return view('backend.pages.allcars',compact('car'));
     }
 
     public function add() {
@@ -52,8 +53,8 @@ class CarController extends Controller
 
             ]
             );
-            return redirect()->back();
-        
+            return redirect()->route('car.view');
+
     }
 
 }
