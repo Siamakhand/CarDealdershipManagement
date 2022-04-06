@@ -4,7 +4,7 @@
 
 
 
-<h2>dafhdjsdfhsdfhsdfl</h2>
+<h2></h2>
 
 @endsection
 

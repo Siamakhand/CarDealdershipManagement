@@ -27,6 +27,7 @@ Route::get('/', function () {
 
 Route::get('/car/view',[CarController::class,'view'])-> name('car.view');
 Route::get('/car/add',[CarController::class,'add'])-> name('car.add');
+Route::post('/car/show',[CarController::class,'show'])->name('car.show');
 Route::get('/car/available',[CarController::class,'available'])-> name('car.available');
 Route::get('/car/sold',[CarController::class,'sold'])-> name('car.sold');
 Route::get('/car/category',[CarController::class,'category'])-> name('car.category');
@@ -49,3 +50,5 @@ Route::get('/employes',[EmployesController::class,'view'])-> name('car.employes'
 
 /* payment history */
 Route::get('/payment',[PaymentController::class,'view'])-> name('payment.view');
+
+

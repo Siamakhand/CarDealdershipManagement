@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\admin;
 
-use App\Http\Controllers\Controller;
+use App\Models\Car;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\admin\CarController;
 
 class CarController extends Controller
 {
@@ -33,6 +35,25 @@ class CarController extends Controller
     public function category() {
 
         return view ('backend.pages.carcategory');
+    }
+
+
+    public function show(Request $request) {
+
+        Car::create(
+            [
+
+        'car_name'=>$request->car_name,
+        'car_brand'=>$request->car_brand,
+        'car_details'=>$request->car_details,
+        'car_quantity'=>$request->car_quantity,
+        'car_varient'=>$request->car_varient,
+        'car_price'=>$request->car_price,
+
+            ]
+            );
+            return redirect()->back();
+        
     }
 
 }
