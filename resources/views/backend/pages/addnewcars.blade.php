@@ -28,7 +28,8 @@
     <label for="exampleInputEmail1">Car Price</label>
     <input type="number" class="form-control"  placeholder="Car Price" name="car_price">
   </div>
-  <button type="submit" ><class="btn btn-primary mt-3" >Submit</button>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
 

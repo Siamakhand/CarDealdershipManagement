@@ -9,6 +9,6 @@ class BookingController extends Controller
 {
     PUblic function view() {
 
-        return view('backend.pages.booking');
+        return view('backend.pages.Bookings.booking');
     }
 }

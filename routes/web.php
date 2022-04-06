@@ -6,6 +6,7 @@ use App\Http\Controllers\admin\SellController;
 use App\Http\Controllers\admin\BookingController;
 use App\Http\Controllers\admin\PaymentController;
 use App\Http\Controllers\admin\CustomerController;
+use App\Http\Controllers\admin\EmployesController;
 use App\Http\Controllers\admin\AnalyticsController;
 
 /*

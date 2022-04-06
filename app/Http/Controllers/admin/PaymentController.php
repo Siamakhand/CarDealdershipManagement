@@ -10,6 +10,6 @@ class PaymentController extends Controller
     
     public function view() {
 
-        return view('backend.pages.paymenthistory');
+        return view('backend.pages.Payment.paymenthistory');
     }
 }

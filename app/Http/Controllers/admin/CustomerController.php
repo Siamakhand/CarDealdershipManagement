@@ -10,6 +10,6 @@ class CustomerController extends Controller
     
     public function view() {
 
-        return view('backend.pages.customers');
+        return view('backend.pages.Customer.customers');
     }
 }

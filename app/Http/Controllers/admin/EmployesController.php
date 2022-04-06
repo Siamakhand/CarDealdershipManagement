@@ -9,6 +9,6 @@ class EmployesController extends Controller
 {
     Public function view() {
 
-        return view ('backend.pages.employes');
+        return view ('backend.pages.Employes.employes');
     }
 }

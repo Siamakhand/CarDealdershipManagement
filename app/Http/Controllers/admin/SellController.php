@@ -10,7 +10,7 @@ class SellController extends Controller
     
     public function view() {
 
-      return view('backend.pages.sell');  
+      return view('backend.pages.Sells.sell');  
     }
 
 }
