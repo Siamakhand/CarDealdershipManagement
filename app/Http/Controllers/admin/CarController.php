@@ -9,9 +9,6 @@ use App\Http\Controllers\admin\CarController;
 
 class CarController extends Controller
 {
-    //
-
-
     public function view() {
         $car = Car::all();
 

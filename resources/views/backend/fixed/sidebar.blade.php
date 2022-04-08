@@ -123,14 +123,31 @@
               </a>
             </li>
 
-  
             <li class="menu-item">
-              <a href="{{route('car.employes')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-collection"></i>
-                <div data-i18n="Basic">Employes</div>
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                <div data-i18n="Account Settings">Employees</div>
               </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="{{route('car.employes')}}" class="menu-link">
+                    <div data-i18n="Account">add Employees</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="{{route('employee.list')}}" class="menu-link">
+                    <div data-i18n="Notifications">Employees Available</div>
+                  </a>
+                </li>
+
+              </ul>
             </li>
- 
+
+
+
+
+
+
             <li class="menu-item">
               <a href="{{route('analytics.view')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
