@@ -46,7 +46,7 @@ Route::get('/Booking',[BookingController::class,'view'])-> name('booking.view');
 Route::get('/Sells',[SellController::class,'view'])-> name('sell.view');
 
 /*  employes routing    */
-Route::get('/employee',[EmployesController::class,'view'])-> name('car.employes');
+Route::get('/employee',[EmployesController::class,'view'])-> name('employee.view');
 Route::get('/employee/list',[EmployesController::class,'add'])-> name('employee.list');
 Route::post('/employee/show',[EmployesController::class,'show'])->name('employee.show');
 

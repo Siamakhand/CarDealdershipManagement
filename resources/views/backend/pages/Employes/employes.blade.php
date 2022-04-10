@@ -10,7 +10,7 @@
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Employee Date of Birth</label>
-    <input type="number" class="form-control"  placeholder="Employee Date of Birth" name="employee_Date_of_Birth">
+    <input type="date" class="form-control"  placeholder="Employee Date of Birth" name="employee_Date_of_Birth">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Employee Address</label>
@@ -18,7 +18,7 @@
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Employee Rank</label>
-    <input type="number" class="form-control"  placeholder="Employee Rank" name="employee_Rank">
+    <input type="text" class="form-control"  placeholder="Employee Rank" name="employee_Rank">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Employee Salary</label>

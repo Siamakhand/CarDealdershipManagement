@@ -130,7 +130,7 @@
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="{{route('car.employes')}}" class="menu-link">
+                  <a href="{{route('employee.view')}}" class="menu-link">
                     <div data-i18n="Account">add Employees</div>
                   </a>
                 </li>

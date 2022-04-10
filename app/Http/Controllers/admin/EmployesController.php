@@ -18,8 +18,9 @@ class EmployesController extends Controller
 
 
     public function add() {
+        $employee = Employee::all();
 
-        return view ('backend.pages.Employes.employeslist');
+        return view ('backend.pages.Employes.employeslist',compact('employee'));
     }
 
     public function show(Request $request) {
@@ -35,6 +36,6 @@ class EmployesController extends Controller
 
             ]
             );
-            return redirect()->route('employee.list');
+            return redirect()-> back;
 }
 }
