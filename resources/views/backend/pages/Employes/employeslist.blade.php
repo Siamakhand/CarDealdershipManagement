@@ -16,7 +16,7 @@
         </tr>
     </thead>
     <tbody>
-    @foreach ($employee as $data)
+        @foreach ($employee as $data)
         <tr>
             <th scope="row">{{$data->id}}</th>
             <td scope="row">{{$data->employee_Name}}</td>
@@ -26,8 +26,8 @@
             <td scope="row">{{$data->employee_Salary}}</td>
             <td>
                 <a href="" class="btn btn-primary">view</a>
-                <a href="" class="btn btn-success">edit</a>
-                <a href="" class="btn btn-danger">delete</a>
+                <a href="{{route('employee.form',$data->id)}}" class="btn btn-success">edit</a>
+                <a href="{{route('employee.delete',$data->id)}}" class="btn btn-danger">delete</a>
             </td>
 
         </tr>

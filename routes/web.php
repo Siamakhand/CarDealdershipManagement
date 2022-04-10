@@ -50,6 +50,11 @@ Route::get('/employee',[EmployesController::class,'view'])-> name('employee.view
 Route::get('/employee/list',[EmployesController::class,'add'])-> name('employee.list');
 Route::post('/employee/show',[EmployesController::class,'show'])->name('employee.show');
 
+// edit employee
+Route::get('/form/edit/employee/{id}',[EmployesController::class,'form'])->name('employee.form');
+Route::put('/form/edit/employee/{id}',[EmployesController::class,'edit'])->name('employee.edit');
+Route::get('/form/delete/employee/{id}',[EmployesController::class,'delete'])->name('employee.delete');
+
 /* payment history */
 Route::get('/payment',[PaymentController::class,'view'])-> name('payment.view');
 
