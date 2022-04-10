@@ -15,14 +15,14 @@ return new class extends Migration
     {
         Schema::create('cars', function (Blueprint $table) {
             $table->id();
-            $table->string('car_name');
+            $table->string('car_name')->nullable();
             $table->string('car_brand');
             $table->string('car_details');
             $table->string('car_quantity');
             $table->string('car_varient');
             $table->string('car_price');
             $table->timestamps();
-            
+
         });
     }
 

@@ -4,7 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use App\Models\Employee;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;   
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\admin\EmployesController;
 
 class EmployesController extends Controller
@@ -34,8 +34,7 @@ class EmployesController extends Controller
         'employee_Rank'=>$request->employee_Rank,
         'employee_Salary'=>$request->employee_Salary,
 
-            ]
-            );
-            return redirect()-> back;
+            ]);
+            return redirect()-> back();
 }
 }

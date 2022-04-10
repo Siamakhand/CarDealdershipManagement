@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('employee_Name');
             $table->string('employee_Date_of_Birth');
             $table->string('employee_Address');
-            $table->string('employee_Rank');
-            $table->string('employee_Salary');
+            $table->integer('employee_Rank');
+            $table->integer('employee_Salary');
             $table->timestamps();
         });
     }
