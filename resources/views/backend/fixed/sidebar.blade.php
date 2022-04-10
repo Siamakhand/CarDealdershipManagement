@@ -77,6 +77,15 @@
 
             <!-- Layouts -->
 
+                        <!-- Cards -->
+                        <li class="menu-item">
+              <a href="{{route('car.add')}}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">Add new Cars</div>
+              </a>
+            </li>
+
+
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
@@ -100,13 +109,6 @@
                 </li>
               </ul>
             </li>
-            <!-- Cards -->
-            <li class="menu-item">
-              <a href="{{route('car.add')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-collection"></i>
-                <div data-i18n="Basic">Add new Cars</div>
-              </a>
-            </li>
 
 
             <li class="menu-item">
@@ -122,6 +124,8 @@
                 <div data-i18n="Basic">Customers</div>
               </a>
             </li>
+
+
 
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -139,12 +143,28 @@
                     <div data-i18n="Notifications">Employees Available</div>
                   </a>
                 </li>
-
               </ul>
             </li>
 
 
-
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                <div data-i18n="Account Settings">Sells</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="{{route('sell.view')}}" class="menu-link">
+                    <div data-i18n="Account">add Sells</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="{{route('sell.List')}}" class="menu-link">
+                    <div data-i18n="Notifications">All sells</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
 
 
 
@@ -155,6 +175,8 @@
               </a>
             </li>
 
+
+
             <li class="menu-item">
               <a href="{{route('booking.view')}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
@@ -163,12 +185,6 @@
             </li>
 
 
-            <li class="menu-item">
-              <a href="{{route('sell.view')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-collection"></i>
-                <div data-i18n="Basic">Sell</div>
-              </a>
-            </li>
 
             <li class="menu-item">
               <a href="{{route('payment.view')}}" class="menu-link">

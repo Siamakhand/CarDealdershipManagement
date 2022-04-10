@@ -45,10 +45,10 @@ class EmployesController extends Controller
                 $employee = Employee::find($id);
                 $employee->update([
                     'employee_Name'=>$request->employee_Name,
-        'employee_Date_of_Birth'=>$request->employee_Date_of_Birth,
-        'employee_Address'=>$request->employee_Address,
-        'employee_Rank'=>$request->employee_Rank,
-        'employee_Salary'=>$request->employee_Salary,
+                    'employee_Date_of_Birth'=>$request->employee_Date_of_Birth,
+                    'employee_Address'=>$request->employee_Address,
+                    'employee_Rank'=>$request->employee_Rank,
+                    'employee_Salary'=>$request->employee_Salary,
 
                 ]);
                 return redirect()->back();

@@ -33,7 +33,14 @@ Route::get('/car/available',[CarController::class,'available'])-> name('car.avai
 Route::get('/car/sold',[CarController::class,'sold'])-> name('car.sold');
 Route::get('/car/category',[CarController::class,'category'])-> name('car.category');
 
-/* analytics */
+// edit car
+Route::get('/form/edit/car/{id}',[CarController::class,'form'])->name('car.form');
+Route::put('/form/edit/car/{id}',[CarController::class,'edit'])->name('car.edit');
+Route::get('/form/delete/car/{id}',[CarController::class,'delete'])->name('car.delete');
+
+
+
+// analytics 
 Route::get('/analytics',[AnalyticsController::class,'view'])-> name('analytics.view');
 
 /* Customers */
@@ -43,10 +50,12 @@ Route::get('/customers',[CustomerController::class,'view'])-> name('customers.vi
 Route::get('/Booking',[BookingController::class,'view'])-> name('booking.view');
 
 /* Sells */
-Route::get('/Sells',[SellController::class,'view'])-> name('sell.view');
+Route::get('/Sells/form',[SellController::class,'view'])-> name('sell.view');
+Route::get('/Sells/list',[SellController::class,'add'])-> name('sell.List');
+Route::post('/Sells/show',[SellController::class,'show'])-> name('sell.show');
 
 /*  employes routing    */
-Route::get('/employee',[EmployesController::class,'view'])-> name('employee.view');
+Route::get('/employee/form',[EmployesController::class,'view'])-> name('employee.view');
 Route::get('/employee/list',[EmployesController::class,'add'])-> name('employee.list');
 Route::post('/employee/show',[EmployesController::class,'show'])->name('employee.show');
 

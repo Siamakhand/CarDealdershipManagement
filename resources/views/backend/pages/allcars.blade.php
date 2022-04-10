@@ -28,8 +28,8 @@
             <td scope="row">{{$data->car_price}}</td>
             <td>
                 <a href="" class="btn btn-primary">view</a>
-                <a href="" class="btn btn-success">edit</a>
-                <a href="" class="btn btn-danger">delete</a>
+                <a href="{{route('car.form',$data->id)}}" class="btn btn-success">edit</a>
+                <a href="{{route('car.delete',$data->id)}}" class="btn btn-danger">delete</a>
             </td>
 
         </tr>

@@ -54,5 +54,27 @@ class CarController extends Controller
 
     }
 
+    public function form($id) {
+            $car = Car::find($id);
+            return view('backend.pages.caredit',compact('car'));
+    }
+
+    public function edit(Request $request,$id){
+        $car = Car::find($id);
+        $car->update([
+            'car_name'=>$request->car_name,
+            'car_brand'=>$request->car_brand,
+            'car_details'=>$request->car_details,
+            'car_quantity'=>$request->car_quantity,
+            'car_varient'=>$request->car_varient,
+            'car_price'=>$request->car_price,
+
+        ]);
+        return redirect()->back();
 }
 
+public function  delete($id){
+    $car =Car::find($id)->delete();
+    return redirect()->back();
+}
+}
